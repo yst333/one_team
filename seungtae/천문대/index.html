@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header">
+                        <h1 class="logo"></h1>
+                        <div class="nav"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="contents">
+            <div class="container">
+                <div class="row">
+                    <div class="content1">
+                        <h2>하늘의 보석함을 열어, <br><span>빛나는 보물</span>들을 찾아냅니다.</h2>
+                        <img src="./images/introduce_image11.png" alt="소개 이미지1">
+                    </div>
+                    <div class="content2">
+                        <p>
+                            지금 이 순간, 도심의 혼잡한 길거리와 빛나는 램프들 사이에서 우리는 하늘의 신비로운 공간으로 초대합니다. 천문대는 도시의 소동을   떠나, 조용한 밤하늘로의 휴식을 선사하는 특별한 장소입니다. 별들이 춤추는 무한한 우주에서 우리의 눈과 마음을 사로잡는 아름다운 순간들을 만나보세요.
+                           도심 속에서도 볼 수 있는 별들의 환상적인 퍼포먼스를 감상하며 마음의 여유를 찾을 수 있습니다. <br>천체망원경을 통해 훨씬 더 가까이서 볼 수 있는 달의 표면이나 행성의 매력에 빠져보세요. 그리고 유별난 천체 현상들을 함께 나누며 지식을 넓히고 새로운 발견을 경험할 수 있습니다.
+                            하늘의 무한한 신비와 낭만이 어우러진 이곳에서, 어린 시절 꿈꿨던 우주 모험을 현실로 만나보세요. 당신의 눈은 이제 더 이상 도심의 혼잡함에 가려지지 않을 것입니다. 천문대는 당신에게 별과 낭만의 하늘 놀이터를 선사합니다.
+                        </p>
+                    </div>
+                    <div class="content3">
+                        <div class="notice1">
+                            <h3>천문대 현황</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">위치 : 강원특별자치도 영월군~~~~</a>
+                                </li>
+                                <li>
+                                    <a href="#">개관일자 : 2005년 4월 24일</a>
+                                </li>
+                                <li>
+                                    <a href="#">대지면적 : 4,058m<sup>2</sup></a>
+                                </li>
+                                <li>
+                                    <a href="#">건물면적 : 931m<sup>2</sup></a>
+                                </li>
+                                <li>
+                                    <a href="#">건축규모 : 지하2층, 지상 4층</a>
+                                </li>
+                                <li>
+                                    <a href="#">건축구조 : 철근콘크리트라멘조 (일부 철골근 ) </a>
+                                </li>
+                            </ul>
+                        </div>
+                            <div class="notice2">
+                                <img src="./images/introduce_image22.png" alt="소개 이미지2">        
+                            </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+         $(document).ready(function() {  
+          $(window).scroll( function(){
+              $('.content1 h2').each( function(i){
+                  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                  var bottom_of_window = $(window).scrollTop() + $(window).height(); 
+                  if( bottom_of_window > bottom_of_object/2 ){
+                      $(this).animate({'opacity':'1'},700);
+                  }
+                }); 
+            });
+          });
+    </script>
+</body>
+</html>
