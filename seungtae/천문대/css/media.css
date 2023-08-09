@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@media(max-width:1520px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width:1024px) {
+    .container {
+        width: 90%;
+      }
+    
+}
+@media(max-width:768px) {
+.content3 .notice1 {
+    width: 100%;
+    text-align: center;
+}
+.content3 .notice1 ul li::before {
+    display: none;
+}
+
+.content3 .notice2 {
+    width: 100%;
+}
+
+}
+
+@media(max-width:480px) {
+.content2 {
+    font-size: 0.8em;
+}
+.content3 .notice1 h3 {
+    font-size: 1.5em;
+}
+.content3 .notice1 ul li a {
+    font-size: 0.8em;
+}
+
+
+    
+
+
+}
